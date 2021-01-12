@@ -1,0 +1,62 @@
+/* ######### Matt Black Strip Main Menu Bar CSS ######### */
+
+.mattblackmenu ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #FFF;
+}
+
+.mattblackmenu li{
+display: inline;
+margin: 0;
+}
+
+.mattblackmenu li a{
+	float: left;
+	display: block;
+	text-decoration: none;
+	margin: 0; /*right divider between tabs*/
+	color: white;
+	padding-top: 8px;
+	padding-right: 15px;
+	padding-bottom: 9px;
+	padding-left: 15px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #33C;
+	border-left-color: #33C;
+}
+
+
+
+.mattblackmenu li a:hover{
+	background-image: url(../images/button_hovewer_bg.jpg);
+	background-repeat: repeat-x;
+	color: #666;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+}
+
+.mattblackmenu a.selected{
+	background-image: url(../images/button_hovewer_bg.jpg);
+	background-repeat: repeat-x;
+	color: #666;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-left-color: #CCC;
+}
