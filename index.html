@@ -1,426 +1,682 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 
 <head>
-      <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>⛪José Daniel's Personal Site</title>
-  <link rel="icon" href="images/jdg.ico" />
-    <!-- Bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!-- CSS Stylesheets -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.84.0">
+  <title>Album example · Bootstrap v5.0</title>
 
-  <link rel="stylesheet" href="css/stylesheet.css">
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:wght@100;400&family=Montserrat+Alternates&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Hachi+Maru+Pop&family=Waiting+for+the+Sunrise&display=swap"
-    rel="stylesheet">
-    
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+  <!-- Bootstrap core CSS -->
+      <!-- Bootstrap link -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+      <!-- CSS Stylesheets -->
+  <!-- <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+
 </head>
 
 <body>
-  <div class="top-header">
-    <div class="top_1">
-      <h2-2>WebDevelopment's Course Notesbook</h2-2>
-    </div>
-    <div class="top_2">
-      <!-- <img src="https://hosting.photobucket.com/images/i/jguisao/jdg_xmas_tree.jpg?width=1920&height=1080&fit=bounds" alt="José Güisao" width="200px">  -->
-      <!-- <img
-        src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_hat.png?width=1920&height=1080&fit=bounds"
-        alt="José Guisao Hat" width="250px"> -->
-    </div>
-    <div class="top_3">
-      <h2-2>José D. Güisao</h2-2>
-    </div>
 
-  </div>
-<!-- 
-  <p class="text16">
-    </class><em>Network IT Analyst</em></p> -->
-<!-- 
-  <br />
-  <p>
-  <h3> Mozilla developers website</h3>
-  <a href="https://developer.mozilla.org">
-    <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T31A1PA29PT10X4Y13D1028833493FS1538/views/1,width=100,height=100,appearanceId=1,noPt=true/dino-coffeetea-mug.jpg" alt="Visit the MDN site">
-    <br> Mozilla MDN
-  </a>
-  </p>  -->
-
-
-  <!--Lo siguiente es praticando con emmet , https:/docs.emmet.io/cheatsheet
-        probando con <style media="screen"> </style>
-
-    informacion esta en este https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
-
-    -->
-  
-  <br>
-<div class="container px-5">
-    <div class="row">
-    <div class=" col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
-      <h2>Projects 2021-</h2>
-      <hr>
-      <p> <a href="https://easyeda.com/"> https://easyeda.com/ </a>
-        For board prototypes</p>
-      <p> <a
-          href="https://towardsdatascience.com/in-10-minutes-web-scraping-with-beautiful-soup-and-selenium-for-data-professionals-8de169d36319">WebScraping</a>
-      </p>
-      <p><a href="https://docs.python.org/3.8/">Python3 - Docs(3.8)</a> </p>
-
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Python paramiko
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-	
-<li><a class="dropdown-item" href="#">import paramiko         </a></li>
-<li><a class="dropdown-item" href="#">import os.path          </a></li>
-<li><a class="dropdown-item" href="#">import time             </a></li>
-<li><a class="dropdown-item" href="#">import re               </a></li>
-<li><a class="dropdown-item" href="#">import sys              </a></li>
-<li><a class="dropdown-item" href="#">ip = "xxx.xxx.xxx.xxx"  </a></li>
-<li><a class="dropdown-item" href="#">username = "xxxxx"      </a></li>
-<li><a class="dropdown-item" href="#">password = "xxxxx"      </a></li>
-<li><a class="dropdown-item" href="#">session = paramiko.SSHClient() </a></li>
-<li><a class="dropdown-item" href="#">session.set_missing_host_key_policy(paramiko.AutoAddPolicy())</a></li>
-<li><a class="dropdown-item" href="#">session.connect(hostname = ip, username = username, password = password, look_for_keys=False, allow_agent=False)</a></li>
-<li><a class="dropdown-item" href="#">connection = session.invoke_shell()             </a></li>
-<li><a class="dropdown-item" href="#">connection.send("term len 0\n")                 </a></li>
-<li><a class="dropdown-item" href="#">connection.send("show int status | count not\n")</a></li>
-<li><a class="dropdown-item" href="#">connection.send("show switch\n")                </a></li>
-<li><a class="dropdown-item" href="#">connection.send("show env all \n")              </a></li>
-<li><a class="dropdown-item" href="#">switch_output = connection.recv(65535)          </a></li>
-<li><a class="dropdown-item" href="#">print(switch_output.decode())                   </a></li>
-<li><a class="dropdown-item" href="#">session.close()                                 </a></li>
-  </ul>
-</div>
-<br>
-<hr>
-<br>
-<div class="dropdown">
-  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    Python cli history
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-    <li><a class="dropdown-item" href="https://stackoverflow.com/questions/6558765/how-do-you-see-the-entire-command-history-in-interactive-python">how to see cli history python</a></li>
-    <li><a class="dropdown-item" href="#">import readline</a></li>
-    <li><a class="dropdown-item" href="#"> print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))</a></li>
-  </ul>
-</div>
-
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
-      <h2>WebDevelopment Bootcamp resourses</h2>
-      <hr>
-      <ol>
-        <li><a href="https://www.appbrewery.co/p/web-development-course-resources"> appbrewery </a> </li>
-        <li> <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/"> Click </a> Images Decition Tree </li>
-        <li> <a href="https://www.w3schools.com/colors/default.asp">Colors Tutorial</a> w3schools</li>
-        <li><a href="https://tympanus.net/codrops/">codrops</a> Tutorial JS Animations </li>
-        <li><a href="https://tympanus.net/Tutorials/BreathingDots/#/demo1">Animations</a> Spirit of Rhythm </li>
-      </ol>
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #EAFFD0; border: 2px solid;">
-      <h2>Tools for research</h2>
-      <hr>
-      <p><a href="https://www.cia.gov/the-world-factbook/">Central Intelligence Agency - factbook</a></p>
-      <p><a href="https://www.census.gov/">Census.gov</a></p>
-
-    </div>
-    </div>
-    <div class="row">
-    <div class=" col-md-4 col-sm-6" style="background-color: #eaffd0; border: 2px solid;">
-      <h2>Cosas Interesantes</h2>
-      <hr>
-      <ol>
-        <li> <a href="https://techcrunch.com/"> techcrunch</a> Tech News</li>
-        <li><a href="https://www.gamepressure.com/">gamepressure</a> Gamming </li>
-        <li>ORGANIZAR TODO ESTA INFORMACION </li>
-        <li><em><strong> <a href="https://es.lipsum.com/">es.lipsum.com</a> Lorem Ip sum Generator </strong></em></li>
-        <li><a href="https://idsgn.dropmark.com/107/1111">Bacon Ipsum</a></li>
-        <li> <a href="https://www.fractuslearning.com/">fractuslearning</a> Interesting Stuff!! </li>
-      </ol>
-      <hr>
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
-      <h2>Resources</h2>
-      <hr>
-      <ol>
-        <li><a href="http://codepen.io">codepen.io</a> </li>
-        <li> <a href="http://codeply.com">codeplay.com</a></li>
-        <li> <a href="http://devdocs.io">devdocs.io</a> </li>
-        <li> <a href="https://developer.mozilla.org/en-US/">Mozilla MDN</a> Nice!! </li>
-        <li> <a href="http://www.gutenberg.org/">Gutenberg.org</a> <strong>Gutenberg.org</strong></li>
-        <li><a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax </a>w3schools</li>
-        <li><a href="http://web.archive.org">web.archive.org</a> Nice too!</li>
-        <li><a href="http://unicode-table.com">unicode-table.com</a> Cool !!</li>
-        <li> <a href="https://app.photobucket.com/u/jguisao">photobucket.com </a>Photo Gallery</li>
-        <li> <a href="https://crop-circle.imageonline.co/">crop-circle.imageonline.co</a> Change Imges formats </li>
-        <li><a href="https://pixlr.com/e/">pixlr.com</a>to edit photos</li>
-        <li> <a href="https://colorhunt.co">colorhunt.co</a> Color palettes</li>
-        <li> <a href="http://web.archive.org/">http://web.archive.org/</a> </li>
-        <li> <a href="https://www.flaticon.com/"> flaticon.com Kool!!</a> </li>
-        <li> <a href="https://emojipedia.org/">emojipedia</a> Good stuff </li>
-      </ol>
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
-      <h2>Fonts, Designs etc</h2>
-      <hr>
-      <ol>
-        <li> <a
-            href=https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab>Google
-            Design</a>
-        </li>
-        <li>
-          <a href="https://fonts.google.com/">fonts.google</a>
-        </li>
-        <li>
-          <a href="https://repl.it/~"> repl.it </a> for Learning python
-        </li>
-        <li> <a href="https://color.adobe.com/create/color-wheel">adobe color tool</a> </li>
-        <li>
-          <a href="https://dev.to#">https://dev.to</a> developers news
-        </li>
-        <li><a href="https://egghead.io">https//egghead.io</a> web developers learn tool
-        </li>
-        <li><a href="https://frontendmasters.com">https://frontendmasters</a> online courses
-        </li>
-        <li><a href="https://learnjavascript.online">htps://learnjavascript.online</a>
-        </li>
-      </ol>
-    </div>
-    </div>
-
-  <hr>
-
-  <div class="row">
-    <div class="col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
-      <h2>CSS info</h2>
-      <hr />
-      <p>
-      <ol><strong>
-          <li> <a href="https://css-tricks.com/almanac/properties/b/box-shadow/">css-tricks.com</a> CSS tricks Box
-            shadow</li>
-          <li><a href="https://www.imagehover.io/">https://www.imagehover.io/</a> image hover</li>
-          <li> </li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      
-      <hr>
-    </div>
-    <div class="col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
-      <h2>Box Two</h2>
-      <hr />
-      <p>
-      <ol><strong>
-          <li> <a href="https://www.w3schools.com/charsets/ref_emoji.asp">w3schools.com/charsets/ref_emoji.asp</a>
-            charsets ref_emoji </li>
-          <li> </li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      <hr/>
-    </div>
-    <div class="col-md-4 col-sm-6" style="background-color: #EAFFD0; border: 2px solid;">
-      <h2>Box Three</h2>
-      <hr />
-      <img
-        src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_hat.png?width=1920&height=1080&fit=bounds"
-        alt="jdg_cropped_cir_hat" width="100">
-      <p>
-      <ol><strong>
-          <li> <a href="https://ascii.co.uk/">ascii.co.uk/</a>Ascii Art </li>
-          <li> </li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      <hr/>
-
-    </div>
-  </div>
-
-  <div class="row">
-    <div class=" col-md-4 col-sm-6" style="background-color: #eaffd0; border: 2px solid;">
-      <h2>Drawing Tools</h2>
-      <hr />
-      <p>
-      <ol><strong>
-          <li><a href="https://sketch.io/sketchpad/">sketch.io/sketchpad/</a> App de dibujar</li>
-          <li> </li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      <hr/>
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
-      <h2>Designs to look for!!</h2>
-      <hr />
-      <img
-        src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_01.png?width=1920&height=1080&fit=bounds"
-        alt="jdg-hd" width="150">
-      <p>
-      <ol><strong>
-          <li><a href="https://collectui.com/">https://collectui.com/</a> Daily collected from daily UI </li>
-          <li><a href="https://www.dailyui.co/">https://www.dailyui.co/</a> Designs Challenges </li>
-          <li><a href="https://www.awwwards.com/">https://www.awwwards.com</a> Websites Designs</li>
-          <li><a href="http://ui-patterns.com/">http://ui-patterns.com/</a> User Interface Patterns</li>
-          <li><a href="https://dribbble.com/">https://dribbble.com/</a> Designers Portfolios</li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      <hr/>
-    </div>
-    <div class=" col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
-      <h2>Science Projects</h2>
-      <hr />
-      <img
-        src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_01.png?width=1920&height=1080&fit=bounds"
-        alt="jdg-hd" width="150">
-      <p>
-      <ol><strong>
-          <li> <a
-              href="https://sciencetoymaker.org/putt-putt-boat/putt-putt-engines/copper-coil-boat-engines/">https://sciencetoymaker.org</a>
-            sciencetoymaker </li>
-          <li> </li>
-          <li> </li>
-        </strong></ol>
-      </p>
-      <hr/>
-    </div>
-  </div>
-</div>
-
-
-  <!-- <hr> -->
-  <h3> Texto de Relleno Lorem ipsum </h3>
-  <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus itaque provident facilis blanditiis
-      repellendus nostrum repellat saepe praesentium deserunt maiores explicabo id quia repudiandae, delectus ipsam
-      illum. Unde
-      veritatis, optio!</span>
-    <span>Obcaecati similique, qui iure ducimus sint! Eligendi id magnam sunt, ad aperiam in quam veniam officia neque.
-      Dolor esse sunt dolore explicabo, velit beatae, perferendis eligendi incidunt laborum libero neque.</span>
-    <span>Tempora aliquid nisi, reiciendis facilis repellendus earum doloremque, fugit quidem eum repellat, voluptates,
-      officiis nam numquam praesentium! Magni quis veniam officiis nobis, nulla laboriosam. Soluta minus pariatur iste,
-      id
-      distinctio.</span>
-    <span>Ipsam, corporis molestiae officia similique quasi est, rerum doloremque suscipit! Illo in veritatis, nulla
-      explicabo consectetur, saepe quam corporis, qui, iste harum obcaecati. Voluptatem, deleniti ipsum dolorem sed
-      recusandae
-      corrupti.</span>
-  </p>
-  <hr>
-  <h3>
-    <blockquote>“If I had asked people what they wanted, they would have said faster horses. ”
-      - Henry Ford </blockquote>
-  </h3>
-  <hr>
-  </div>
-  <!--
-    <ol><em><strong>Start un-ordered list:</strong></em>
-      <li>
-        <a href="http://www.google.com">Google</a>
-        <br><strong>hyper-link</strong>
-        <hr>
-      </li>
-      <li>
-        <a href="mailto:jguisao@gmail.com">email:jguisao@gmail.com</a>
-        <hr>
-      </li>
-      <li>
-        <abbr title="This is a example of abbr tag">Abbrebiation tag</abbr>
-        <hr>
-      </li>
-      <li>
-        link rel="stylesheet" href="/css/styles"
-        <link rel="stylesheet" href="/css/styles">
-    </li>
-    </ol>
-    <hr>
--->
-
-  <!-- <div class="warning">
-    <img src="images/leopard.jpg" width="150" alt="An intimidating leopard.">
-    <p>Beware of the leopard</p>
-  </div> -->
-
-
-  <!--Beginning of Middlecontent Norcom Website -->
-
-  <div class="container px-5">
-    <div class="row">
-      <div class="col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
-          <p> <a href="http://www.time.gov/" target="_blank"> <img
-              src="./knowledge.php_files/out.gif" width="138" height="90" border="0"></a><br> </p>
-          <p><a href="http://www.time.gov/" target="_blank">Official USA Time</a></p>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-muted">This is a Notebook for my web development course. Intended to have in one place all the tools, tips, helps and other resources availables in the web</p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">José Daniel Güisao</h4>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-white">Follow on Twitter</a></li>
+              <li><a href="#" class="text-white">Facebook</a></li>
+              <li><a href="#" class="text-white">jguisao@gmail.com</a></li>
+            </ul>
+          </div>
         </div>
-      <div class="col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
-        <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank"><img
-              src="./knowledge.php_files/metricconversions.gif" width="138" height="90" border="0"></a><br></p>
-          <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank">
-              Metric Conversions </a></p>
-        </div>    
-      <div class="col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
-        <p> <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank"><img
-              src="./knowledge.php_files/wikipedia.gif" width="138" height="90" border="0"></a><br></p>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2"
+            viewBox="0 0 24 24">
+            <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+            <circle cx="12" cy="13" r="4" />
+          </svg>
+          <strong>Album</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-          <p><a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia is bias be carefull</a></p>
-        </div>
-        </div>
-      <div class="row">
-      <div class="col-md-4 col-sm-6" style="background-color: #7D5A50; border: 2px solid;">
-        <p> <a href="http://www.sciencemadesimple.com/" target="_blank"><img
-              src="./knowledge.php_files/science.gif" width="138" height="90" border="0"></a><br></p>
-          <p><a href="http://www.sciencemadesimple.com/" target="_blank">Science Made Simple </a></p>
-        </div>
-      <div class="col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
-        
-        <p><a href="http://www.ipl.org/" target="_blank"><img
-              src="./knowledge.php_files/ipl.gif" width="138" height="90" border="0"></a><br> </p>
-          <p><a href="http://www.ipl.org/" target="_blank">IPL2 (Formerly Internet Public Library)</a></p>
-        </div>
-      <div class="col-md-4 col-sm-6" style="background-color: #FCDEC0; border: 2px solid;"> 
-          <p> <a href="http://www.coolmath.com/" target="_blank"><img
-              src="./knowledge.php_files/coll-math.gif" width="138" height="90" border="0"></a><br></p>
-          <p> <a href="http://www.coolmath.com/" target="_blank">Cool math Learning</a></p>
-        </div>
-      </div>  
-      <div class="row">  
-      <div class="col-md-4 col-sm-6" style="background-color: #D79771; border: 2px solid;">
-        <p><a href="http://www.google.com/earth/index.html" target="0"><img
-              src="./knowledge.php_files/google-earth.gif" width="130" height="90" border="0"></a> <br></p>
-          <p><a href="http://www.google.com/earth/index.html" target="_blank">Google Earth</a></p>
-        </div>
-      <div class="col-md-4 col-sm-6" style="background-color: #B4846C; border: 2px solid;">
-       <p> <a href="http://gutenberg.org" target="_blank"><img
-              src="./knowledge.php_files/project-guternberg.gif" width="138" height="90" border="0"></a><br></p>
-          <p> <a href="http://gutenberg.org" target="_blank">Free eBooks</a></p>
-        </div>
-      <div class="col-md-4 col-sm-6" style="background-color: #B05B3B; border: 2px solid;">
-        <p> <a href="http://education.yahoo.com/reference/dict_en_es/" target="_blank"><img
-              src="./knowledge.php_files/es-translater.gif" width="138" height="90" border="0"></a><br></p>
-          <p><a href="http://education.yahoo.com/reference/dict_en_es/" target="_blank">Spanish English Dictionary</a>
+  <main>
+
+    <section class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light">WebDevelop Notebook</h1>
+          <p class="lead text-muted">Links, notes, tools, webtools, interesting information.</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
           </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="album py-5 bg-light">
+      <div class="container">
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="50%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#9BB7D4" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">webtools</text>
+              </svg>
+              <div class="card-body" style="background-color: #b5cda3">
+                <p class="card-text" >
+                  <ol>
+                    <li><a href="http://codepen.io">codepen.io</a> </li>
+                    <li> <a href="http://codeply.com">codeplay.com</a></li>
+                    <li> <a href="http://devdocs.io">devdocs.io</a> </li>
+                    <li> <a href="https://developer.mozilla.org/en-US/">Mozilla MDN</a> Nice!! </li>
+                    <li> <a href="http://www.gutenberg.org/">Gutenberg.org</a> <strong>Gutenberg.org</strong></li>
+                    <li><a href="https://www.w3schools.com/css/css_syntax.asp">CSS Syntax </a>w3schools</li>
+                    <li><a href="http://web.archive.org">web.archive.org</a> Nice too!</li>
+                    <li><a href="http://unicode-table.com">unicode-table.com</a> Cool !!</li>
+                    <li> <a href="https://app.photobucket.com/u/jguisao">photobucket.com </a>Photo Gallery</li>
+                    <li> <a href="https://crop-circle.imageonline.co/">crop-circle.imageonline.co</a> Change Imges formats </li>
+
+                  </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#11324d" /><text x="50%" y="50%" fill="#c1cfc0"
+                  dy=".3em">Resources</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #a3b7cd">
+                <p class="card-text">
+                  <ol>
+                    <li><a href="https://www.appbrewery.co/p/web-development-course-resources"> appbrewery </a> </li>
+                    <li> <a href="https://www.w3.org/WAI/tutorials/images/decision-tree/"> Click </a> Images Decition Tree </li>
+                    <li> <a href="https://www.w3schools.com/colors/default.asp">Colors Tutorial</a> w3schools</li>
+                    <li><a href="https://tympanus.net/codrops/">codrops</a> Tutorial JS Animations </li>
+                    <li><a href="https://tympanus.net/Tutorials/BreathingDots/#/demo1">Animations</a> Spirit of Rhythm </li>
+                    <li><a href="https://pixlr.com/e/">pixlr.com</a>to edit photos</li>
+                    <li> <a href="https://colorhunt.co">colorhunt.co</a> Color palettes</li>
+                    <li> <a href=" http://web.archive.org/">http://web.archive.org/</a> </li>
+                    <li> <a href="https://www.flaticon.com/"> flaticon.com Kool!!</a> </li>
+                    <li> <a href="https://emojipedia.org/">emojipedia</a> Good stuff </li>
+                  </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#F5DF4D" /><text x="50%" y="50%" fill="#FF5757"
+                  dy=".3em">Graphics Tools</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #C9E4C5">
+                <p class="card-text"><ol>
+                  <li> <a href=https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab>Google Design</a></li>
+                  <li> <a href="https://fonts.google.com/">fonts.google</a></li>
+                  <li> <a href="https://repl.it/~"> repl.it </a> for Learning python</li>
+                  <li> <a href="https://color.adobe.com/create/color-wheel">adobe color tool</a> </li>
+                  <li> <a href="https://dev.to#">https://dev.to</a> developers news</li>
+                  <li><a href="https://egghead.io">https//egghead.io</a> web developers learn tool</li>
+                  <li><a href="https://frontendmasters.com">https://frontendmasters</a> online courses</li>
+                  <li><a href="https://learnjavascript.online">htps://learnjavascript.online</a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#34568B" /><text x="50%" y="50%" fill="#ffffff"
+                  dy=".3em">Python</text>
+              </svg>
+         
+              <div class="card-body" style="background-color: #eedd71">
+                <p class="card-text"><ol>
+                  <li><a href="https://docs.python.org/3.8/">Python3 - Docs(3.8)</a></li>
+                  <li><a href="https://www.w3schools.com/python/python_lists_comprehension.asp">lists comprehension</a></li>
+                  <li><a href="http://"></a>
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Python cli history
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #7ebee9;">
+                        <li><a class="dropdown-item" href="https://stackoverflow.com/questions/6558765/how-do-you-see-the-entire-command-history-in-interactive-python">how to see cli history python</a></li>
+                        <li><a class="dropdown-item" href="#">import readline</a></li>
+                        <li><a class="dropdown-item" href="#"> print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))</a></li>
+                      </ul>
+                    </div></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a>
+                    <div class="dropdown">
+                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Python paramiko
+                      </button>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #7ebee9;">
+                      
+                    <li><a class="dropdown-item" href="#">import paramiko         </a></li>
+                    <li><a class="dropdown-item" href="#">import os.path          </a></li>
+                    <li><a class="dropdown-item" href="#">import time             </a></li>
+                    <li><a class="dropdown-item" href="#">import re               </a></li>
+                    <li><a class="dropdown-item" href="#">import sys              </a></li>
+                    <li><a class="dropdown-item" href="#">ip = "xxx.xxx.xxx.xxx"  </a></li>
+                    <li><a class="dropdown-item" href="#">username = "xxxxx"      </a></li>
+                    <li><a class="dropdown-item" href="#">password = "xxxxx"      </a></li>
+                    <li><a class="dropdown-item" href="#">session = paramiko.SSHClient() </a></li>
+                    <li><a class="dropdown-item" href="#">session.set_missing_host_key_policy(paramiko.AutoAddPolicy())</a></li>
+                    <li><a class="dropdown-item" href="#">session.connect(hostname = ip, username = username, password = password, look_for_keys=False, allow_agent=False)</a></li>
+                    <li><a class="dropdown-item" href="#">connection = session.invoke_shell()             </a></li>
+                    <li><a class="dropdown-item" href="#">connection.send("term len 0\n")                 </a></li>
+                    <li><a class="dropdown-item" href="#">connection.send("show int status | count not\n")</a></li>
+                    <li><a class="dropdown-item" href="#">connection.send("show switch\n")                </a></li>
+                    <li><a class="dropdown-item" href="#">connection.send("show env all \n")              </a></li>
+                    <li><a class="dropdown-item" href="#">switch_output = connection.recv(65535)          </a></li>
+                    <li><a class="dropdown-item" href="#">print(switch_output.decode())                   </a></li>
+                    <li><a class="dropdown-item" href="#">session.close()                                 </a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#ff4848" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">Projects 2021</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #B89B72;">
+                <p class="card-text"><ol>
+                  <li> <a href="https://easyeda.com/"> https://easyeda.com/ </a>For board prototypes</li>
+                  <li> <a href="https://towardsdatascience.com/in-10-minutes-web-scraping-with-beautiful-soup-and-selenium-for-data-professionals-8de169d36319">WebScraping</a> Extract data from websites</li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FDAC53" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">Linux Tips</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #EDD59E;">
+                <p class="card-text"><ol>
+                  <li></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#FA7A35" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">Web Apps</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #EDD59E;">
+                <p class="card-text"><ol>
+                  <li><a href="https://app.photobucket.com">Photobucket</a> </li>
+                  <li><a href="https://drive.google.com/drive">Google drive</a></li>
+                  <li><a href="https://www.icloud.com">icloud</a></li>
+                  <li><a href="https://github.com">github</a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#0072B5" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Thumbnail</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #ECDB54;">
+                <p class="card-text"><ol>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">More Cards may be FOPs</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text"><ol>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                  <li><a href="http://"></a></li>
+                </ol></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#00A591" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">Offcial USA Time</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #EC9787;">
+                <p class="card-text">
+                  
+                    <p> <a href="http://www.time.gov/" target="_blank"> <img
+                        src=https://hosting.photobucket.com/images/i/jguisao/usamap(1).png?width=285&height=175&crop=fill  height="200" border="0"></a> </p>
+                    <p><a href="http://www.time.gov/" target="_blank">Official USA Time</a></p>
+                 
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#0072B5" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Metric Conversions</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #ECDB54;">
+                <p class="card-text">
+                    <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank">
+                        <img src=https://hosting.photobucket.com/images/i/jguisao/English_2FMetric_tape.png?" width="200" height="250" border="0"></a></p>
+                    <!-- <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank">
+                        <img src="https://hosting.photobucket.com/images/i/jguisao/inch_metric_tape.png?" width="100" height="100">Metric Conversions </a></p> -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Wikipedia !! beware is bias</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text">
+                    <p> <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank"><img
+                          src="https://hosting.photobucket.com/images/i/jguisao/wikipedia-logo-warning.png?"  width="200" height="200" border="0"></a></p>
+                      <p><a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia is bias be carefull</a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Last Card for Now</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text">
+                    <p><a href="http://www.google.com/earth/index.html" target="0"><img
+                          src="https://hosting.photobucket.com/images/i/jguisao/google-earth-computer-icons-google-maps-png.png" width="200"  height="200" border="0"></a></p>
+                      <p><a href="http://www.google.com/earth/index.html" target="_blank">Google Earth</a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#00A591" /><text x="50%" y="50%" fill="#ffff"
+                  dy=".3em">Project Gutenberg</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #EC9787;">
+                <p class="card-text">
+                  
+                    <p> <a href="http://gutenberg.org" target="_blank"><img
+                           src="https://hosting.photobucket.com/images/i/jguisao/gutenberg-project.png" width="200" height="200" border="0"></a></p>
+                       <p> <a href="http://gutenberg.org" target="_blank">Free eBooks</a></p>
+                 
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#0072B5" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Metric conversions</text>
+              </svg>
+
+              <div class="card-body" style="background-color: #ECDB54;">
+                <p class="card-text">
+                  <p> <a href="http://www.sciencemadesimple.com/" target="_blank"><img
+                    src="https://hosting.photobucket.com/images/i/jguisao/quemestry_vases.png"  width="200" height="200" border="0"></a></p>
+                <p><a href="http://www.sciencemadesimple.com/" target="_blank">Science Made Simple </a></p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">Spanish translate</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text">
+                  <p> <a href="https://www.wordreference.com/es/translation.asp?tranword=educational" target="_blank"><img
+                    src="https://hosting.photobucket.com/images/i/jguisao/translate.png" width="200" height="150" border="0"</a></p>
+                <p><a href="https://www.wordreference.com/es/translation.asp?tranword=educational" target="_blank">Spanish English Dictionary</a>
+                  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">coolmath games</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text">
+                  <p> <a href="http://www.coolmath.com/" target="_blank"><img
+                    src="./knowledge.php_files/coll-math.gif" height="190" border="0"></a><br></p>
+                <p> <a href="http://www.coolmath.com/" target="_blank">Cool math Learning</a></p>
+                  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="100" xmlns="http://www.w3.org/2000/svg"
+                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                <title>Placeholder</title>
+                <rect width="100%" height="100%" fill="#E9897E" /><text x="50%" y="50%" fill="#eceeef"
+                  dy=".3em">IPL Library Research</text>
+              </svg>
+
+              <div class="card-body" style="background-color:  #6B5B95;">
+                <p class="card-text">
+                  <p><a href="http://www.ipl.org/" target="_blank"><img
+                    src="https://hosting.photobucket.com/images/i/jguisao/ipl_library_research.png?width=285&height=175&crop=fill" width="300" height="300" border="0"></a><br> </p>
+                <p><a href="http://www.ipl.org/" target="_blank">IPL2 (Formerly Internet Public Library)</a></p>
+                  
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-warning">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-warning">Edit</button>
+                  </div>
+                  <small class="text-muted">9 mins</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>  
-  
-  </div>
+  </main>
 
-  <!--Ending of Middlecontent-->
-  <!--Beginning of Footer section-->
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+      <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
+          href="../getting-started/introduction/">getting started guide</a>.</p>
+    </div>
+  </footer>
+
+  <!-- <script src="../assets/dist/js/bootstrap.bundle.min.js"></script> -->
 
   <!-- Bootstrap Bundle with Popper  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
