@@ -2,16 +2,17 @@
 <html lang="en" dir="ltr">
 
 <head>
-  <meta charset="utf-8">
+      <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>⛪José Daniel's Personal Site</title>
   <link rel="icon" href="images/jdg.ico" />
-  <!-- Boot Strap StyleSheet -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- CSS Stylesheets -->
 
-  <link rel="stylesheet" href="css/styles2.css">
   <link rel="stylesheet" href="css/stylesheet.css">
-
+  <link rel="stylesheet" href="css/styles.css">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
@@ -20,6 +21,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&family=Hachi+Maru+Pop&family=Waiting+for+the+Sunrise&display=swap"
     rel="stylesheet">
+    
 </head>
 
 <body>
@@ -28,28 +30,29 @@
       <h2-2>WebDevelopment's Course Notesbook</h2-2>
     </div>
     <div class="top_2">
-      <!-- <img src="https://hosting.photobucket.com/images/i/jguisao/jdg_xmas_tree.jpg?width=1920&height=1080&fit=bounds" alt="José Güisao" width="250px"> -->
-      <img
+      <!-- <img src="https://hosting.photobucket.com/images/i/jguisao/jdg_xmas_tree.jpg?width=1920&height=1080&fit=bounds" alt="José Güisao" width="200px">  -->
+      <!-- <img
         src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_hat.png?width=1920&height=1080&fit=bounds"
-        alt="José Guisao Hat" width="250px">
+        alt="José Guisao Hat" width="250px"> -->
     </div>
     <div class="top_3">
-      <h2-2>José Daniel Güisao</h2-2>
+      <h2-2>José D. Güisao</h2-2>
     </div>
 
   </div>
-
+<!-- 
   <p class="text16">
-    </class><em>Network IT Analyst</em></p>
-
+    </class><em>Network IT Analyst</em></p> -->
+<!-- 
   <br />
   <p>
   <h3> Mozilla developers website</h3>
   <a href="https://developer.mozilla.org">
-    <img src=" https://avatars.githubusercontent.com/u/7565578?s=200&v=4" alt="Visit the MDN site">
+    <img src="https://image.spreadshirtmedia.com/image-server/v1/compositions/T31A1PA29PT10X4Y13D1028833493FS1538/views/1,width=100,height=100,appearanceId=1,noPt=true/dino-coffeetea-mug.jpg" alt="Visit the MDN site">
     <br> Mozilla MDN
   </a>
-  </p>
+  </p>  -->
+
 
   <!--Lo siguiente es praticando con emmet , https:/docs.emmet.io/cheatsheet
         probando con <style media="screen"> </style>
@@ -57,10 +60,11 @@
     informacion esta en este https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
 
     -->
-
+  
   <br>
-  <div class="wrapper">
-    <div class="one">
+<div class="container px-5">
+    <div class="row">
+    <div class=" col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
       <h2>Projects 2021-</h2>
       <hr>
       <p> <a href="https://easyeda.com/"> https://easyeda.com/ </a>
@@ -68,8 +72,51 @@
       <p> <a
           href="https://towardsdatascience.com/in-10-minutes-web-scraping-with-beautiful-soup-and-selenium-for-data-professionals-8de169d36319">WebScraping</a>
       </p>
+      <p><a href="https://docs.python.org/3.8/">Python3 - Docs(3.8)</a> </p>
+
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Python paramiko
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+	
+<li><a class="dropdown-item" href="#">import paramiko         </a></li>
+<li><a class="dropdown-item" href="#">import os.path          </a></li>
+<li><a class="dropdown-item" href="#">import time             </a></li>
+<li><a class="dropdown-item" href="#">import re               </a></li>
+<li><a class="dropdown-item" href="#">import sys              </a></li>
+<li><a class="dropdown-item" href="#">ip = "xxx.xxx.xxx.xxx"  </a></li>
+<li><a class="dropdown-item" href="#">username = "xxxxx"      </a></li>
+<li><a class="dropdown-item" href="#">password = "xxxxx"      </a></li>
+<li><a class="dropdown-item" href="#">session = paramiko.SSHClient() </a></li>
+<li><a class="dropdown-item" href="#">session.set_missing_host_key_policy(paramiko.AutoAddPolicy())</a></li>
+<li><a class="dropdown-item" href="#">session.connect(hostname = ip, username = username, password = password, look_for_keys=False, allow_agent=False)</a></li>
+<li><a class="dropdown-item" href="#">connection = session.invoke_shell()             </a></li>
+<li><a class="dropdown-item" href="#">connection.send("term len 0\n")                 </a></li>
+<li><a class="dropdown-item" href="#">connection.send("show int status | count not\n")</a></li>
+<li><a class="dropdown-item" href="#">connection.send("show switch\n")                </a></li>
+<li><a class="dropdown-item" href="#">connection.send("show env all \n")              </a></li>
+<li><a class="dropdown-item" href="#">switch_output = connection.recv(65535)          </a></li>
+<li><a class="dropdown-item" href="#">print(switch_output.decode())                   </a></li>
+<li><a class="dropdown-item" href="#">session.close()                                 </a></li>
+  </ul>
+</div>
+<br>
+<hr>
+<br>
+<div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    Python cli history
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+    <li><a class="dropdown-item" href="https://stackoverflow.com/questions/6558765/how-do-you-see-the-entire-command-history-in-interactive-python">how to see cli history python</a></li>
+    <li><a class="dropdown-item" href="#">import readline</a></li>
+    <li><a class="dropdown-item" href="#"> print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))</a></li>
+  </ul>
+</div>
+
     </div>
-    <div class="two">
+    <div class=" col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
       <h2>WebDevelopment Bootcamp resourses</h2>
       <hr>
       <ol>
@@ -80,29 +127,34 @@
         <li><a href="https://tympanus.net/Tutorials/BreathingDots/#/demo1">Animations</a> Spirit of Rhythm </li>
       </ol>
     </div>
-    <div class="three">
+    <div class=" col-md-4 col-sm-6" style="background-color: #EAFFD0; border: 2px solid;">
       <h2>Tools for research</h2>
       <hr>
       <p><a href="https://www.cia.gov/the-world-factbook/">Central Intelligence Agency - factbook</a></p>
       <p><a href="https://www.census.gov/">Census.gov</a></p>
+
     </div>
-    <div class="four">
+    </div>
+    <div class="row">
+    <div class=" col-md-4 col-sm-6" style="background-color: #eaffd0; border: 2px solid;">
       <h2>Cosas Interesantes</h2>
       <hr>
       <ol>
         <li> <a href="https://techcrunch.com/"> techcrunch</a> Tech News</li>
         <li><a href="https://www.gamepressure.com/">gamepressure</a> Gamming </li>
-        <li>Item two of the list</li>
+        <li>ORGANIZAR TODO ESTA INFORMACION </li>
         <li><em><strong> <a href="https://es.lipsum.com/">es.lipsum.com</a> Lorem Ip sum Generator </strong></em></li>
+        <li><a href="https://idsgn.dropmark.com/107/1111">Bacon Ipsum</a></li>
         <li> <a href="https://www.fractuslearning.com/">fractuslearning</a> Interesting Stuff!! </li>
       </ol>
       <hr>
     </div>
-    <div class="five">
+    <div class=" col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
       <h2>Resources</h2>
       <hr>
-      <ul>
+      <ol>
         <li><a href="http://codepen.io">codepen.io</a> </li>
+        <li> <a href="http://codeply.com">codeplay.com</a></li>
         <li> <a href="http://devdocs.io">devdocs.io</a> </li>
         <li> <a href="https://developer.mozilla.org/en-US/">Mozilla MDN</a> Nice!! </li>
         <li> <a href="http://www.gutenberg.org/">Gutenberg.org</a> <strong>Gutenberg.org</strong></li>
@@ -116,14 +168,12 @@
         <li> <a href="http://web.archive.org/">http://web.archive.org/</a> </li>
         <li> <a href="https://www.flaticon.com/"> flaticon.com Kool!!</a> </li>
         <li> <a href="https://emojipedia.org/">emojipedia</a> Good stuff </li>
-      </ul>
+      </ol>
     </div>
-
-
-    <div class="six">
+    <div class=" col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
       <h2>Fonts, Designs etc</h2>
       <hr>
-      <ul>
+      <ol>
         <li> <a
             href=https://design.google/library/google-fonts/?utm_source=Google&utm_medium=Fonts&utm_campaign=Article%20Tab>Google
             Design</a>
@@ -136,23 +186,22 @@
         </li>
         <li> <a href="https://color.adobe.com/create/color-wheel">adobe color tool</a> </li>
         <li>
-          <a href="https://dev.to#">https://dev.to</a>
+          <a href="https://dev.to#">https://dev.to</a> developers news
         </li>
-        <li><a href="https://egghead.io">https//egghead.io</a>
+        <li><a href="https://egghead.io">https//egghead.io</a> web developers learn tool
         </li>
-        <li><a href="https://frontendmasters.com">https://frontendmasters</a>
+        <li><a href="https://frontendmasters.com">https://frontendmasters</a> online courses
         </li>
         <li><a href="https://learnjavascript.online">htps://learnjavascript.online</a>
         </li>
-      </ul>
+      </ol>
+    </div>
     </div>
 
-
-  </div>
   <hr>
-  <br>
-  <div class="wrapper1">
-    <div class="box1">
+
+  <div class="row">
+    <div class="col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
       <h2>CSS info</h2>
       <hr />
       <p>
@@ -164,10 +213,10 @@
           <li> </li>
         </strong></ol>
       </p>
-
+      
       <hr>
     </div>
-    <div class="box2">
+    <div class="col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
       <h2>Box Two</h2>
       <hr />
       <p>
@@ -178,8 +227,9 @@
           <li> </li>
         </strong></ol>
       </p>
+      <hr/>
     </div>
-    <div class="box3">
+    <div class="col-md-4 col-sm-6" style="background-color: #EAFFD0; border: 2px solid;">
       <h2>Box Three</h2>
       <hr />
       <img
@@ -192,9 +242,13 @@
           <li> </li>
         </strong></ol>
       </p>
+      <hr/>
 
     </div>
-    <div class="box4">
+  </div>
+
+  <div class="row">
+    <div class=" col-md-4 col-sm-6" style="background-color: #eaffd0; border: 2px solid;">
       <h2>Drawing Tools</h2>
       <hr />
       <p>
@@ -204,26 +258,27 @@
           <li> </li>
         </strong></ol>
       </p>
-
+      <hr/>
     </div>
-    <div class="box5">
+    <div class=" col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
       <h2>Designs to look for!!</h2>
       <hr />
       <img
         src="https://hosting.photobucket.com/images/i/jguisao/jdg_cropped_cir_01.png?width=1920&height=1080&fit=bounds"
         alt="jdg-hd" width="150">
       <p>
-      <ol><strong>
+      <ol>
           <li><a href="https://collectui.com/">https://collectui.com/</a> Daily collected from daily UI </li>
           <li><a href="https://www.dailyui.co/">https://www.dailyui.co/</a> Designs Challenges </li>
           <li><a href="https://www.awwwards.com/">https://www.awwwards.com</a> Websites Designs</li>
           <li><a href="http://ui-patterns.com/">http://ui-patterns.com/</a> User Interface Patterns</li>
           <li><a href="https://dribbble.com/">https://dribbble.com/</a> Designers Portfolios</li>
           <li> </li>
-        </strong></ol>
+        </ol>
       </p>
+      <hr/>
     </div>
-    <div class="box6">
+    <div class=" col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
       <h2>Science Projects</h2>
       <hr />
       <img
@@ -238,10 +293,13 @@
           <li> </li>
         </strong></ol>
       </p>
+      <hr/>
     </div>
   </div>
+</div>
 
-  <hr>
+
+  <!-- <hr> -->
   <h3> Texto de Relleno Lorem ipsum </h3>
   <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus itaque provident facilis blanditiis
       repellendus nostrum repellat saepe praesentium deserunt maiores explicabo id quia repudiandae, delectus ipsam
@@ -288,83 +346,81 @@
     <hr>
 -->
 
-  <div class="warning">
-    <img src="images/leopard.jpg" alt="An intimidating leopard.">
+  <!-- <div class="warning">
+    <img src="images/leopard.jpg" width="150" alt="An intimidating leopard.">
     <p>Beware of the leopard</p>
-  </div>
+  </div> -->
 
 
   <!--Beginning of Middlecontent Norcom Website -->
-  <div class="middlecontent">
-    <div class="centerbar">
-      <div class="sitemap"><a href="http://www.norcominc.com/index.php">Home </a>/ Knowledge</div>
-      <div class="heading">Knowledge</div>
-      <div class="knowledge">
-        <div class="knowledgethumb"><a href="http://www.time.gov/" target="_blank"><img
-              src="./knowledge.php_files/out.gif" width="138" height="90" border="0"></a><br>
+
+  <div class="container px-5">
+    <div class="row">
+      <div class="col-md-4 col-sm-6" style="background-color: #95E1D3; border: 2px solid;">
+          <p> <a href="http://www.time.gov/" target="_blank"> <img
+              src="./knowledge.php_files/out.gif" width="138" height="90" border="0"></a><br> </p>
           <p><a href="http://www.time.gov/" target="_blank">Official USA Time</a></p>
         </div>
-        <div class="knowledgethumb"><a href="http://www.sciencemadesimple.com/conversions.html" target="_blank"><img
-              src="./knowledge.php_files/metricconversions.gif" width="138" height="90" border="0"></a><br>
+      <div class="col-md-4 col-sm-6" style="background-color: #F38181; border: 2px solid;">
+        <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank"><img
+              src="./knowledge.php_files/metricconversions.gif" width="138" height="90" border="0"></a><br></p>
           <p> <a href="http://www.sciencemadesimple.com/conversions.html" target="_blank">
               Metric Conversions </a></p>
-        </div>
-        <div class="knowledgethumb"><a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank"><img
-              src="./knowledge.php_files/wikipedia.gif" width="138" height="90" border="0"></a><br>
+        </div>    
+      <div class="col-md-4 col-sm-6" style="background-color: #71c9ce; border: 2px solid;">
+        <p> <a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank"><img
+              src="./knowledge.php_files/wikipedia.gif" width="138" height="90" border="0"></a><br></p>
 
-          <p><a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia The free encyclopedia</a></p>
+          <p><a href="http://en.wikipedia.org/wiki/Main_Page" target="_blank">Wikipedia is bias be carefull</a></p>
         </div>
-        <div class="clear"></div>
-      </div>
-      <div class="knowledge">
-        <div class="knowledgethumb"><a href="http://www.sciencemadesimple.com/" target="_blank"><img
-              src="./knowledge.php_files/science.gif" width="138" height="90" border="0"></a><br>
+        </div>
+      <div class="row">
+      <div class="col-md-4 col-sm-6" style="background-color: #7D5A50; border: 2px solid;">
+        <p> <a href="http://www.sciencemadesimple.com/" target="_blank"><img
+              src="./knowledge.php_files/science.gif" width="138" height="90" border="0"></a><br></p>
           <p><a href="http://www.sciencemadesimple.com/" target="_blank">Science Made Simple </a></p>
         </div>
-        <div class="knowledgethumb"><a href="http://www.ipl.org/" target="_blank"><img
-              src="./knowledge.php_files/ipl.gif" width="138" height="90" border="0"></a><br>
+      <div class="col-md-4 col-sm-6" style="background-color: #fce38a; border: 2px solid;">
+        
+        <p><a href="http://www.ipl.org/" target="_blank"><img
+              src="./knowledge.php_files/ipl.gif" width="138" height="90" border="0"></a><br> </p>
           <p><a href="http://www.ipl.org/" target="_blank">IPL2 (Formerly Internet Public Library)</a></p>
         </div>
-        <div class="knowledgethumb"><a href="http://www.coolmath.com/" target="_blank"><img
-              src="./knowledge.php_files/coll-math.gif" width="138" height="90" border="0"></a><br>
-
+      <div class="col-md-4 col-sm-6" style="background-color: #FCDEC0; border: 2px solid;"> 
+          <p> <a href="http://www.coolmath.com/" target="_blank"><img
+              src="./knowledge.php_files/coll-math.gif" width="138" height="90" border="0"></a><br></p>
           <p> <a href="http://www.coolmath.com/" target="_blank">Cool math Learning</a></p>
         </div>
-        <div class="clear"></div>
-      </div>
-      <div class="knowledge">
-        <div class="knowledgethumb"><a href="http://www.google.com/earth/index.html" target="0"><img
-              src="./knowledge.php_files/google-earth.gif" width="138" height="90" border="0"></a> <br>
+      </div>  
+      <div class="row">  
+      <div class="col-md-4 col-sm-6" style="background-color: #D79771; border: 2px solid;">
+        <p><a href="http://www.google.com/earth/index.html" target="0"><img
+              src="./knowledge.php_files/google-earth.gif" width="130" height="90" border="0"></a> <br></p>
           <p><a href="http://www.google.com/earth/index.html" target="_blank">Google Earth</a></p>
         </div>
-        <div class="knowledgethumb"><a href="http://www.gutenberg.org/wiki/Main_Page" target="_blank"><img
-              src="./knowledge.php_files/project-guternberg.gif" width="138" height="90" border="0"></a><br>
-
-          <p> <a href="http://www.gutenberg.org/wiki/Main_Page" target="_blank">Free eBooks</a></p>
+      <div class="col-md-4 col-sm-6" style="background-color: #B4846C; border: 2px solid;">
+       <p> <a href="http://gutenberg.org" target="_blank"><img
+              src="./knowledge.php_files/project-guternberg.gif" width="138" height="90" border="0"></a><br></p>
+          <p> <a href="http://gutenberg.org" target="_blank">Free eBooks</a></p>
         </div>
-        <div class="knowledgethumb"><a href="http://education.yahoo.com/reference/dict_en_es/" target="_blank"><img
-              src="./knowledge.php_files/es-translater.gif" width="138" height="90" border="0"></a><br>
-
+      <div class="col-md-4 col-sm-6" style="background-color: #B05B3B; border: 2px solid;">
+        <p> <a href="http://education.yahoo.com/reference/dict_en_es/" target="_blank"><img
+              src="./knowledge.php_files/es-translater.gif" width="138" height="90" border="0"></a><br></p>
           <p><a href="http://education.yahoo.com/reference/dict_en_es/" target="_blank">Spanish English Dictionary</a>
           </p>
         </div>
-        <div class="clear"></div>
       </div>
     </div>
-    <!--Beginning of Rightbar-->
-    <div class="center-rightbar">Hola estoy aqui <br />
-      div class="center-rightbar"
-    </div>
-    <!--Ending of Rightbar-->
-    <div class="clear"></div>
+
+  </div>  
+  
   </div>
+
   <!--Ending of Middlecontent-->
   <!--Beginning of Footer section-->
 
-  <!-- Bootstrap Scripts links -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-    crossorigin="anonymous"></script>
+  <!-- Bootstrap Bundle with Popper  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 
 </html>
