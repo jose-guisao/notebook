@@ -230,41 +230,41 @@
                         <li><a class="dropdown-item" href="#"> print('\n'.join([str(readline.get_history_item(i + 1)) for i in range(readline.get_current_history_length())]))</a></li>
                       </ul>
                     </div></li>
+                    <li><a href="http://"></a>
+                      <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Python paramiko
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #7ebee9;">
+                      <li><a class="dropdown-item" href="#">import paramiko         </a></li>
+                      <li><a class="dropdown-item" href="#">import os.path          </a></li>
+                      <li><a class="dropdown-item" href="#">import time             </a></li>
+                      <li><a class="dropdown-item" href="#">import re               </a></li>
+                      <li><a class="dropdown-item" href="#">import sys              </a></li>
+                      <li><a class="dropdown-item" href="#">ip = "xxx.xxx.xxx.xxx"  </a></li>
+                      <li><a class="dropdown-item" href="#">username = "xxxxx"      </a></li>
+                      <li><a class="dropdown-item" href="#">password = "xxxxx"      </a></li>
+                      <li><a class="dropdown-item" href="#">session = paramiko.SSHClient() </a></li>
+                      <li><a class="dropdown-item" href="#">session.set_missing_host_key_policy(paramiko.AutoAddPolicy())</a></li>
+                      <li><a class="dropdown-item" href="#">session.connect(hostname = ip, username = username, password = password, look_for_keys=False, allow_agent=False)</a></li>
+                      <li><a class="dropdown-item" href="#">connection = session.invoke_shell()             </a></li>
+                      <li><a class="dropdown-item" href="#">connection.send("term len 0\n")                 </a></li>
+                      <li><a class="dropdown-item" href="#">connection.send("show int status | count not\n")</a></li>
+                      <li><a class="dropdown-item" href="#">connection.send("show switch\n")                </a></li>
+                      <li><a class="dropdown-item" href="#">connection.send("show env all \n")              </a></li>
+                      <li><a class="dropdown-item" href="#">switch_output = connection.recv(65535)          </a></li>
+                      <li><a class="dropdown-item" href="#">print(switch_output.decode())                   </a></li>
+                      <li><a class="dropdown-item" href="#">session.close()                                 </a></li>
+                        </ul>
+                      </div>
+                    </li>  
                   <li><a href="http://"></a></li>
                   <li><a href="http://"></a></li>
                   <li><a href="http://"></a></li>
                   <li><a href="http://"></a></li>
                   <li><a href="http://"></a></li>
                   <li><a href="http://"></a></li>
-                  <li><a href="http://"></a>
-                    <div class="dropdown">
-                      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        Python paramiko
-                      </button>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1" style="background-color: #7ebee9;">
-                      
-                    <li><a class="dropdown-item" href="#">import paramiko         </a></li>
-                    <li><a class="dropdown-item" href="#">import os.path          </a></li>
-                    <li><a class="dropdown-item" href="#">import time             </a></li>
-                    <li><a class="dropdown-item" href="#">import re               </a></li>
-                    <li><a class="dropdown-item" href="#">import sys              </a></li>
-                    <li><a class="dropdown-item" href="#">ip = "xxx.xxx.xxx.xxx"  </a></li>
-                    <li><a class="dropdown-item" href="#">username = "xxxxx"      </a></li>
-                    <li><a class="dropdown-item" href="#">password = "xxxxx"      </a></li>
-                    <li><a class="dropdown-item" href="#">session = paramiko.SSHClient() </a></li>
-                    <li><a class="dropdown-item" href="#">session.set_missing_host_key_policy(paramiko.AutoAddPolicy())</a></li>
-                    <li><a class="dropdown-item" href="#">session.connect(hostname = ip, username = username, password = password, look_for_keys=False, allow_agent=False)</a></li>
-                    <li><a class="dropdown-item" href="#">connection = session.invoke_shell()             </a></li>
-                    <li><a class="dropdown-item" href="#">connection.send("term len 0\n")                 </a></li>
-                    <li><a class="dropdown-item" href="#">connection.send("show int status | count not\n")</a></li>
-                    <li><a class="dropdown-item" href="#">connection.send("show switch\n")                </a></li>
-                    <li><a class="dropdown-item" href="#">connection.send("show env all \n")              </a></li>
-                    <li><a class="dropdown-item" href="#">switch_output = connection.recv(65535)          </a></li>
-                    <li><a class="dropdown-item" href="#">print(switch_output.decode())                   </a></li>
-                    <li><a class="dropdown-item" href="#">session.close()                                 </a></li>
-                      </ul>
-                    </div>
-                  </li>
+                  
                   
                 </ol></p>
                 <div class="d-flex justify-content-between align-items-center">
