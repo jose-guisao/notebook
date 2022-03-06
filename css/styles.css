@@ -4,19 +4,22 @@ font-family: 'Caveat', cursive;
 font-family: 'Hachi Maru Pop', cursive;
 font-family: 'Waiting for the Sunrise', cursive;*/
 body {
-  width: 980px;
+  /* width: 980px; */
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
   margin-top: 0px;
   margin-right: auto;
   margin-bottom: 0px;
   margin-left: auto;
   background-color: #f5efe3;
   clear: both;
+  font-size: 18px;
 }
-
 h1 {
-  font-size: 5.625rem;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 2.625rem;
+  padding:0 0 0 100px;
   margin: 20px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  /* font-family: 'Sacramento', cursive; */
   color: #66bfbf;
 }
 
@@ -30,7 +33,9 @@ h2-2 {
 }
 
 h3 {
-  font-family: 'Caveat', cursive;
+  padding:0 0 0 100px;
+  font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  /* font-family: 'Caveat', cursive; */
   color: #11999e;
 }
 
