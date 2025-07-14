@@ -1,5 +1,6 @@
 {
   "prettier.endOfLine": "auto",
   "editor.formatOnType": true,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "editor.fontSize": 8
 }
